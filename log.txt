@@ -1,0 +1,38 @@
+Loading ONNX model from: models/RealESRGAN_x4plus_x2.onnx
+Warning: could not enable CoreML Execution Provider. Falling back to CPU. Your platform or onnxruntime library does not support CoreML
+ONNX model loaded successfully.
+Loading ONNX model from: models/RealESRGAN_x4plus_x3.onnx
+Warning: could not enable CoreML Execution Provider. Falling back to CPU. Your platform or onnxruntime library does not support CoreML
+ONNX model loaded successfully.
+Loading ONNX model from: models/RealESRGAN_x4plus_x4.onnx
+Warning: could not enable CoreML Execution Provider. Falling back to CPU. Your platform or onnxruntime library does not support CoreML
+ONNX model loaded successfully.
+Loading ONNX model from: models/RealESRGAN_x4plus_anime_6B_x2.onnx
+Warning: could not enable CoreML Execution Provider. Falling back to CPU. Your platform or onnxruntime library does not support CoreML
+ONNX model loaded successfully.
+Loading ONNX model from: models/RealESRGAN_x4plus_anime_6B_x3.onnx
+Warning: could not enable CoreML Execution Provider. Falling back to CPU. Your platform or onnxruntime library does not support CoreML
+ONNX model loaded successfully.
+Loading ONNX model from: models/RealESRGAN_x4plus_anime_6B_x4.onnx
+Warning: could not enable CoreML Execution Provider. Falling back to CPU. Your platform or onnxruntime library does not support CoreML
+ONNX model loaded successfully.
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/v1/upscale           --> github.com/azadraja/image-upscale-api/internal/api.HandleUpscale (4 handlers)
+[GIN-debug] GET    /health                   --> github.com/azadraja/image-upscale-api/internal/api.SetupRouter.func2 (4 handlers)
+Server is running on http://localhost:8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+Successfully decoded image: bonney_input.heic, Format: jpeg, Dimensions: 1080 x 1440
+Processing image in 9 tiles using a concurrent worker pool...
+Image processing complete.
+[GIN] 2025/08/31 - 02:21:48 | 200 |         4m21s |             ::1 | POST     "/api/v1/upscale"
+Successfully decoded image: bonney_input.heic, Format: jpeg, Dimensions: 1080 x 1440
+Processing image in 9 tiles using a concurrent worker pool...
+Image processing complete.
+[GIN] 2025/08/31 - 02:27:34 | 200 |         2m29s |             ::1 | POST     "/api/v1/upscale"
